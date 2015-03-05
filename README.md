@@ -6,7 +6,7 @@ Docker configuration for PostGIS
 `Dockerfile`:
 
 ```dockerfile
-FROM mcenirm/postgis
+FROM mcenirm/postgis:9.4-2.1
 COPY ./schema.sql /tmp/schema.sql
 COPY ./initdb-load-schema.sh /docker-entrypoint-initdb.d/03-load-schema.sh
 ```
